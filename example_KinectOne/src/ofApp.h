@@ -2,10 +2,10 @@
 
 //
 //This example shows how to use ofxDepthCameras addon for working with Kinect One cameras.
-//To compile successfully, 
-//please check that you are using addon's "ofxDepthCameras_KinectOne.cpp" file in the project, 
+//1. To compile successfully, set 64-bit cmpilation (because example contains 64-bit DLL's in its bin folder)
+//2. Please check that you are using addon's "ofxDepthCameras_KinectOne.cpp" file in the project, 
 //and exclude all other "ofxDepthCameras_...cpp" files from the project in Visual Studio.
-//
+
 #include "ofMain.h"
 
 

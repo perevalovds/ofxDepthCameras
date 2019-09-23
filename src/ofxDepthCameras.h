@@ -9,12 +9,37 @@
 //and exclude all other "ofxDepthCameras_...cpp" files from Visual Studio's project 
 //(just exclude, not delete it!:)
 
+
+/*
+//TODO implement settings, and allow to host request the list of supported resolutions and frame rates
+
+struct ofxDepthCameras_Settings {
+
+	int use_depth = 1;
+	int use_ir = 1;
+	int use_rgb = 1;
+	int use_emitter = 1;
+
+	int depth_w = 640;
+	int depth_h = 480;
+	int depth_fps = 30;
+
+	int rgb_w = 640;
+	int rgb_h = 480;
+	int rgb_fps = 30;
+
+	//Camera-specific
+	int realsense_visual_preset = 4;	//4 - RS2_RS400_VISUAL_PRESET_HIGH_DENSITY
+
+};*/
+
+
 class ofxDepthCameras
 {
 public:
 	ofxDepthCameras();
 
-	static string model() { return "Kinect One"; }
+	static string model();
 	static int device_count();
 	static vector<string> get_serials();
 

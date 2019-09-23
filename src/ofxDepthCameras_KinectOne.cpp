@@ -38,6 +38,11 @@ ofxDepthCameras::ofxDepthCameras() {
 }
 
 //------------------------------------------------------------------------------
+string ofxDepthCameras::model() { 
+	return "Kinect One"; 
+}
+	
+//------------------------------------------------------------------------------
 int ofxDepthCameras::device_count() {
 	return get_serials().size();
 }

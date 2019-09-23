@@ -9,7 +9,7 @@ void ofApp::setup(){
 		cout << i + 1 << ":\t" << serials[i] << endl;
 	}
 	if (serials.size() == 0) {
-		cout << "No connected " << ofxDepthCameras::model() << " Kinect One devices!" << endl;
+		cout << "No connected " << ofxDepthCameras::model() << " devices!" << endl;
 	}
 	else {
 		device_.start(0, serials[0]);
