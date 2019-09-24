@@ -89,6 +89,7 @@ bool ofxDepthCameras::start(int i, string device_serial) {
 
 		}
 		data.kinect_time_[i] = -1;
+		return true;
 	}
 	else return false;
 }
@@ -164,7 +165,7 @@ bool ofxDepthCameras::depth_pixels16(int i, int &w, int &h, const unsigned short
 		w = pix.getWidth();
 		h = pix.getHeight();
 		if (w > 0 && h > 0) {
-			pixels = pix.getPixels();
+			pixels = pix.getData();
 			return true;
 		}
 		else {
@@ -187,7 +188,7 @@ bool ofxDepthCameras::depth_pixels8(int i, int min_dist, int max_dist, int &w, i
 		w = pix.getWidth();
 		h = pix.getHeight();
 		if (w > 0 && h > 0) {
-			pixels = pix.getPixels();
+			pixels = pix.getData();
 			return true;
 		}
 		else {

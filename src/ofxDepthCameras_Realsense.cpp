@@ -106,6 +106,7 @@ bool ofxDepthCameras::start(int i, string device_serial) {
 
 		}
 		data.device_time_[i] = -1;
+		return true;
 	}
 	else return false;
 }
