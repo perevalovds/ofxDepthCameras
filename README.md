@@ -18,12 +18,14 @@ and exclude all other "ofxDepthCameras_...cpp" files from the project in Visual 
 
 ## Examples
 
-* example_KinectOne - example of using Microsoft Kinect One. It requires ofxKuKinectV2 addon (by perevalovds)
+* example_KinectOne - example of using Microsoft Kinect One. It requires ofxKuKinectV2 addon (by perevalovds).
+
 After creating the project using Project Generator, 
 keep in project only following ofxDepthCameras's files:
  src/ofxDepthCameras.h and src/ofxDepthCameras_KinectOne.cpp.
 
-* example_Realsense - example of using Intel Realsense cameras D415,D435. It requires ofxRealsense addon (by perevalovds)
+* example_Realsense - example of using Intel Realsense cameras D415,D435. It requires ofxRealsense addon (by perevalovds).
+
 After creating the project using Project Generator, 
 keep in project only following ofxDepthCameras's files:
  src/ofxDepthCameras.h and src/ofxDepthCameras_Realsense2.cpp.

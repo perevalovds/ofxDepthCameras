@@ -176,6 +176,8 @@ bool ofxDepthCameras::depth_pixels16(int i, int &w, int &h, const unsigned short
 	cout << "ofxDepthCameras_Realsense error: currently depth_pixels16 is not supported" << endl;
 	return false;
 
+	//To implement, use device_.get_depth_pixels_mm()
+
 	/*
 	w = h = 0;
 	pixels = NULL;
@@ -208,7 +210,7 @@ bool ofxDepthCameras::depth_pixels8(int i, int min_dist, int max_dist, int &w, i
 		auto &device = data.device_[i];
 
 		int w1, h1;
-		bool result = device.get_depth_pixels_rgb(w1, h1, data.depth8[i]);
+		bool result = device.get_depth_pixels8(min_dist, max_dist, w1, h1, data.depth8[i]);
 		if (!result) return false;
 		w = w1;
 		h = h1;
