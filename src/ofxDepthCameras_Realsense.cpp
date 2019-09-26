@@ -257,7 +257,10 @@ bool ofxDepthCameras::point_cloud(int i, int &count, const glm::vec3 *&pcloud, o
 		auto &device = data.device_[i];
 		auto &points = data.points[i];
 
-		bool result = device.get_point_cloud(points);
+		int mirrorx = 0;
+		int mirrory = 1;
+		int mirrorz = 0;
+		bool result = device.get_point_cloud(points, mirrorx, mirrory, mirrorz);
 		if (!result) return false;
 
 		//discard points outside corners
